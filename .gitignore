@@ -1,0 +1,5 @@
+log/*.log
+tmp/**/*
+db/dev/*
+doc/api
+doc/app
