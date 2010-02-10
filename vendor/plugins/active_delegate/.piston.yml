@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  piston:remote-revision: 143
+  piston:uuid: 59a688aa-0110-0410-81cd-84552bdc45b6
+lock: false
+repository_url: http://svn.planetargon.org/rails/plugins/active_delegate
+repository_class: Piston::Svn::Repository
