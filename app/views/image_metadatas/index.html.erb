@@ -1,0 +1,48 @@
+<h1>Listing image_metadatas</h1>
+
+<table>
+  <tr>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Lens</th>
+    <th>Focallength</th>
+    <th>Focallength35</th>
+    <th>Exposuretime</th>
+    <th>Exposureprogram</th>
+    <th>Exposuremode</th>
+    <th>Sensitivity</th>
+    <th>Flash</th>
+    <th>Whitebalance</th>
+    <th>Whitebalancecolortemperature</th>
+    <th>Meteringmode</th>
+    <th>Subjectdistance</th>
+    <th>Subjectdistancecategory</th>
+  </tr>
+
+<% @image_metadatas.each do |image_metadata| %>
+  <tr>
+    <td><%=h image_metadata.make %></td>
+    <td><%=h image_metadata.model %></td>
+    <td><%=h image_metadata.lens %></td>
+    <td><%=h image_metadata.focalLength %></td>
+    <td><%=h image_metadata.focalLength35 %></td>
+    <td><%=h image_metadata.exposureTime %></td>
+    <td><%=h image_metadata.exposureProgram %></td>
+    <td><%=h image_metadata.exposureMode %></td>
+    <td><%=h image_metadata.sensitivity %></td>
+    <td><%=h image_metadata.flash %></td>
+    <td><%=h image_metadata.whiteBalance %></td>
+    <td><%=h image_metadata.whiteBalanceColorTemperature %></td>
+    <td><%=h image_metadata.meteringMode %></td>
+    <td><%=h image_metadata.subjectDistance %></td>
+    <td><%=h image_metadata.subjectDistanceCategory %></td>
+    <td><%= link_to 'Show', image_metadata %></td>
+    <td><%= link_to 'Edit', edit_image_metadata_path(image_metadata) %></td>
+    <td><%= link_to 'Destroy', image_metadata, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_metadata', new_image_metadata_path %>

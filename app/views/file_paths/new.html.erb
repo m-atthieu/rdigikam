@@ -1,0 +1,15 @@
+<h1>New file_path</h1>
+
+<% form_for(@file_path) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :path %><br />
+    <%= f.text_field :path %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', file_paths_path %>

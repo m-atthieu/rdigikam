@@ -1,0 +1,28 @@
+<h1>Listing image_comments</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Language</th>
+    <th>Author</th>
+    <th>Date</th>
+    <th>Comment</th>
+  </tr>
+
+<% @image_comments.each do |image_comment| %>
+  <tr>
+    <td><%=h image_comment.type %></td>
+    <td><%=h image_comment.language %></td>
+    <td><%=h image_comment.author %></td>
+    <td><%=h image_comment.date %></td>
+    <td><%=h image_comment.comment %></td>
+    <td><%= link_to 'Show', image_comment %></td>
+    <td><%= link_to 'Edit', edit_image_comment_path(image_comment) %></td>
+    <td><%= link_to 'Destroy', image_comment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_comment', new_image_comment_path %>

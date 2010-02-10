@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  latitude: MyString
+  latitudeNumber: 1.5
+  longitude: MyString
+  longitudeNumber: 1.5
+  altitude: 1.5
+  orientation: 1.5
+  tilt: 1.5
+  roll: 1.5
+  accuracy: 1.5
+  description: MyText
+
+two:
+  latitude: MyString
+  latitudeNumber: 1.5
+  longitude: MyString
+  longitudeNumber: 1.5
+  altitude: 1.5
+  orientation: 1.5
+  tilt: 1.5
+  roll: 1.5
+  accuracy: 1.5
+  description: MyText

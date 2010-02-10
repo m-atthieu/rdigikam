@@ -1,0 +1,20 @@
+<h1>Listing unique_hashes</h1>
+
+<table>
+  <tr>
+    <th>Filesize</th>
+  </tr>
+
+<% @unique_hashes.each do |unique_hash| %>
+  <tr>
+    <td><%=h unique_hash.fileSize %></td>
+    <td><%= link_to 'Show', unique_hash %></td>
+    <td><%= link_to 'Edit', edit_unique_hash_path(unique_hash) %></td>
+    <td><%= link_to 'Destroy', unique_hash, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New unique_hash', new_unique_hash_path %>

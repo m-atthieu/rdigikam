@@ -1,0 +1,28 @@
+<h1>Editing tumbnail</h1>
+
+<% form_for(@tumbnail) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :modificationDate %><br />
+    <%= f.datetime_select :modificationDate %>
+  </p>
+  <p>
+    <%= f.label :orientationHint %><br />
+    <%= f.text_field :orientationHint %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tumbnail %> |
+<%= link_to 'Back', tumbnails_path %>

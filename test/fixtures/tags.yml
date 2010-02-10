@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  icon: 1
+  iconkde: MyString
+
+two:
+  name: MyString
+  icon: 1
+  iconkde: MyString

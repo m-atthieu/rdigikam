@@ -1,0 +1,28 @@
+<p>
+  <b>Relativepath:</b>
+  <%=h @album.relativePath %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @album.date %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%=h @album.caption %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%=h @album.collection %>
+</p>
+
+<p>
+  <b>Icon:</b>
+  <%=h @album.icon %>
+</p>
+
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>

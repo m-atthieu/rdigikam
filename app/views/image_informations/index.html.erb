@@ -1,0 +1,34 @@
+<h1>Listing image_informations</h1>
+
+<table>
+  <tr>
+    <th>Rating</th>
+    <th>Creationdate</th>
+    <th>Orientation</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Format</th>
+    <th>Colordepth</th>
+    <th>Colormodel</th>
+  </tr>
+
+<% @image_informations.each do |image_information| %>
+  <tr>
+    <td><%=h image_information.rating %></td>
+    <td><%=h image_information.creationDate %></td>
+    <td><%=h image_information.orientation %></td>
+    <td><%=h image_information.width %></td>
+    <td><%=h image_information.height %></td>
+    <td><%=h image_information.format %></td>
+    <td><%=h image_information.colorDepth %></td>
+    <td><%=h image_information.colorModel %></td>
+    <td><%= link_to 'Show', image_information %></td>
+    <td><%= link_to 'Edit', edit_image_information_path(image_information) %></td>
+    <td><%= link_to 'Destroy', image_information, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_information', new_image_information_path %>

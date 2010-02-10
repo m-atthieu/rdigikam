@@ -1,0 +1,2 @@
+module ImageCopyrightsHelper
+end

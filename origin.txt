@@ -1,0 +1,15 @@
+ruby script/generate scaffold --skip-migration AlbumRoot label:string status:integer type:integer identifier:string specificPath:string
+ruby script/generate scaffold --skip-migration Album relativePath:string date:datetime caption:string collection:string icon:integer
+ruby script/generate scaffold --skip-migration Image name:string status:integer category:integer modificationDate:datetime fileSize:integer uniqueHash:string
+ruby script/generate scaffold --skip-migration ImagePosition latitude:string latitudeNumber:float longitude:string longitudeNumber:float altitude:float orientation:float tilt:float roll:float accuracy:float description:text
+ruby script/generate scaffold --skip-migration ImageComment type:integer language:string author:string date:datetime comment:text
+ruby script/generate scaffold --skip-migration ImageInformation rating:integer creationDate:datetime orientation:integer width:integer height:integer format:string colorDepth:integer colorModel:integer
+ruby script/generate scaffold --skip-migration ImageMetadata make:string model:string lens:string focalLength:float focalLength35:float exposureTime:float exposureProgram:integer exposureMode:integer sensitivity:integer flash:integer whiteBalance:integer whiteBalanceColorTemperature:integer meteringMode:integer subjectDistance:float subjectDistanceCategory:integer 
+ruby script/generate scaffold --skip-migration ImageProperty property:string value:string
+ruby script/generate scaffold --skip-migration ImageHaarMatrix modificationDate:datetime uniqueHash:string matrix:binary
+ruby script/generate scaffold --skip-migration ImageCopyright property:string value:string extraValue:string
+ruby script/generate scaffold --skip-migration Tag name:string icon:integer iconkde:string
+ruby script/generate scaffold --skip-migration UniqueHash fileSize:integer
+ruby script/generate scaffold --skip-migration Tumbnail type:integer modificationDate:datetime orientationHint:integer date:binary
+ruby script/generate scaffold --skip-migration FilePath path:string
+ruby script/generate model --skip-migration ThumbnailDb

@@ -1,0 +1,22 @@
+<h1>Listing image_properties</h1>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Value</th>
+  </tr>
+
+<% @image_properties.each do |image_property| %>
+  <tr>
+    <td><%=h image_property.property %></td>
+    <td><%=h image_property.value %></td>
+    <td><%= link_to 'Show', image_property %></td>
+    <td><%= link_to 'Edit', edit_image_property_path(image_property) %></td>
+    <td><%= link_to 'Destroy', image_property, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_property', new_image_property_path %>

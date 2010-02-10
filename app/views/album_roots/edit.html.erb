@@ -1,0 +1,32 @@
+<h1>Editing album_root</h1>
+
+<% form_for(@album_root) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :label %><br />
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :identifier %><br />
+    <%= f.text_field :identifier %>
+  </p>
+  <p>
+    <%= f.label :specificPath %><br />
+    <%= f.text_field :specificPath %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @album_root %> |
+<%= link_to 'Back', album_roots_path %>

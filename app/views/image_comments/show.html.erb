@@ -1,0 +1,28 @@
+<p>
+  <b>Type:</b>
+  <%=h @image_comment.type %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%=h @image_comment.language %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @image_comment.author %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @image_comment.date %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @image_comment.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_comment_path(@image_comment) %> |
+<%= link_to 'Back', image_comments_path %>

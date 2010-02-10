@@ -1,0 +1,23 @@
+<p>
+  <b>Type:</b>
+  <%=h @tumbnail.type %>
+</p>
+
+<p>
+  <b>Modificationdate:</b>
+  <%=h @tumbnail.modificationDate %>
+</p>
+
+<p>
+  <b>Orientationhint:</b>
+  <%=h @tumbnail.orientationHint %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @tumbnail.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_tumbnail_path(@tumbnail) %> |
+<%= link_to 'Back', tumbnails_path %>

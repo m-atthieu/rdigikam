@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  label: MyString
+  status: 1
+  type: 1
+  identifier: MyString
+  specificPath: MyString
+
+two:
+  label: MyString
+  status: 1
+  type: 1
+  identifier: MyString
+  specificPath: MyString

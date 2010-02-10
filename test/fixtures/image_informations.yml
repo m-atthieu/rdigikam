@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rating: 1
+  creationDate: 2010-02-10 20:43:09
+  orientation: 1
+  width: 1
+  height: 1
+  format: MyString
+  colorDepth: 1
+  colorModel: 1
+
+two:
+  rating: 1
+  creationDate: 2010-02-10 20:43:09
+  orientation: 1
+  width: 1
+  height: 1
+  format: MyString
+  colorDepth: 1
+  colorModel: 1

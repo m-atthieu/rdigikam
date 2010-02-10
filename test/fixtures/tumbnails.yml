@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: 1
+  modificationDate: 2010-02-10 20:43:22
+  orientationHint: 1
+  date: 
+
+two:
+  type: 1
+  modificationDate: 2010-02-10 20:43:22
+  orientationHint: 1
+  date: 

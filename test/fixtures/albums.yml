@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  relativePath: MyString
+  date: 2010-02-10 20:43:02
+  caption: MyString
+  collection: MyString
+  icon: 1
+
+two:
+  relativePath: MyString
+  date: 2010-02-10 20:43:02
+  caption: MyString
+  collection: MyString
+  icon: 1

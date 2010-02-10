@@ -1,0 +1,24 @@
+<h1>Editing image_haar_matrix</h1>
+
+<% form_for(@image_haar_matrix) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :modificationDate %><br />
+    <%= f.datetime_select :modificationDate %>
+  </p>
+  <p>
+    <%= f.label :uniqueHash %><br />
+    <%= f.text_field :uniqueHash %>
+  </p>
+  <p>
+    <%= f.label :matrix %><br />
+    <%= f.text_field :matrix %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @image_haar_matrix %> |
+<%= link_to 'Back', image_haar_matrices_path %>

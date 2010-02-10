@@ -1,0 +1,28 @@
+<p>
+  <b>Label:</b>
+  <%=h @album_root.label %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @album_root.status %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @album_root.type %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%=h @album_root.identifier %>
+</p>
+
+<p>
+  <b>Specificpath:</b>
+  <%=h @album_root.specificPath %>
+</p>
+
+
+<%= link_to 'Edit', edit_album_root_path(@album_root) %> |
+<%= link_to 'Back', album_roots_path %>

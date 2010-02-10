@@ -1,0 +1,24 @@
+<h1>Listing image_haar_matrices</h1>
+
+<table>
+  <tr>
+    <th>Modificationdate</th>
+    <th>Uniquehash</th>
+    <th>Matrix</th>
+  </tr>
+
+<% @image_haar_matrices.each do |image_haar_matrix| %>
+  <tr>
+    <td><%=h image_haar_matrix.modificationDate %></td>
+    <td><%=h image_haar_matrix.uniqueHash %></td>
+    <td><%=h image_haar_matrix.matrix %></td>
+    <td><%= link_to 'Show', image_haar_matrix %></td>
+    <td><%= link_to 'Edit', edit_image_haar_matrix_path(image_haar_matrix) %></td>
+    <td><%= link_to 'Destroy', image_haar_matrix, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_haar_matrix', new_image_haar_matrix_path %>

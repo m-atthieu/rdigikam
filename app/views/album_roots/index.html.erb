@@ -1,0 +1,28 @@
+<h1>Listing album_roots</h1>
+
+<table>
+  <tr>
+    <th>Label</th>
+    <th>Status</th>
+    <th>Type</th>
+    <th>Identifier</th>
+    <th>Specificpath</th>
+  </tr>
+
+<% @album_roots.each do |album_root| %>
+  <tr>
+    <td><%=h album_root.label %></td>
+    <td><%=h album_root.status %></td>
+    <td><%=h album_root.type %></td>
+    <td><%=h album_root.identifier %></td>
+    <td><%=h album_root.specificPath %></td>
+    <td><%= link_to 'Show', album_root %></td>
+    <td><%= link_to 'Edit', edit_album_root_path(album_root) %></td>
+    <td><%= link_to 'Destroy', album_root, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New album_root', new_album_root_path %>

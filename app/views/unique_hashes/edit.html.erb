@@ -1,0 +1,16 @@
+<h1>Editing unique_hash</h1>
+
+<% form_for(@unique_hash) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :fileSize %><br />
+    <%= f.text_field :fileSize %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @unique_hash %> |
+<%= link_to 'Back', unique_hashes_path %>

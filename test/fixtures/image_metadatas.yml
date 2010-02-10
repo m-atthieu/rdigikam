@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  make: MyString
+  model: MyString
+  lens: MyString
+  focalLength: 1.5
+  focalLength35: 1.5
+  exposureTime: 1.5
+  exposureProgram: 1
+  exposureMode: 1
+  sensitivity: 1
+  flash: 1
+  whiteBalance: 1
+  whiteBalanceColorTemperature: 1
+  meteringMode: 1
+  subjectDistance: 1.5
+  subjectDistanceCategory: 1
+
+two:
+  make: MyString
+  model: MyString
+  lens: MyString
+  focalLength: 1.5
+  focalLength35: 1.5
+  exposureTime: 1.5
+  exposureProgram: 1
+  exposureMode: 1
+  sensitivity: 1
+  flash: 1
+  whiteBalance: 1
+  whiteBalanceColorTemperature: 1
+  meteringMode: 1
+  subjectDistance: 1.5
+  subjectDistanceCategory: 1

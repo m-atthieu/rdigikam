@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  status: 1
+  category: 1
+  modificationDate: 2010-02-10 20:43:04
+  fileSize: 1
+  uniqueHash: MyString
+
+two:
+  name: MyString
+  status: 1
+  category: 1
+  modificationDate: 2010-02-10 20:43:04
+  fileSize: 1
+  uniqueHash: MyString

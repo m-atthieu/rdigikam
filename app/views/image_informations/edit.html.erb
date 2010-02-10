@@ -1,0 +1,44 @@
+<h1>Editing image_information</h1>
+
+<% form_for(@image_information) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </p>
+  <p>
+    <%= f.label :creationDate %><br />
+    <%= f.datetime_select :creationDate %>
+  </p>
+  <p>
+    <%= f.label :orientation %><br />
+    <%= f.text_field :orientation %>
+  </p>
+  <p>
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </p>
+  <p>
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :format %><br />
+    <%= f.text_field :format %>
+  </p>
+  <p>
+    <%= f.label :colorDepth %><br />
+    <%= f.text_field :colorDepth %>
+  </p>
+  <p>
+    <%= f.label :colorModel %><br />
+    <%= f.text_field :colorModel %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @image_information %> |
+<%= link_to 'Back', image_informations_path %>

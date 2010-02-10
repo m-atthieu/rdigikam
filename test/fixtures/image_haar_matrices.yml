@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  modificationDate: 2010-02-10 20:43:15
+  uniqueHash: MyString
+  matrix: 
+
+two:
+  modificationDate: 2010-02-10 20:43:15
+  uniqueHash: MyString
+  matrix: 

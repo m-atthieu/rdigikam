@@ -1,0 +1,23 @@
+<h1>New image_copyright</h1>
+
+<% form_for(@image_copyright) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :property %><br />
+    <%= f.text_field :property %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :extraValue %><br />
+    <%= f.text_field :extraValue %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', image_copyrights_path %>

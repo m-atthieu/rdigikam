@@ -1,0 +1,24 @@
+<h1>Listing image_copyrights</h1>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Value</th>
+    <th>Extravalue</th>
+  </tr>
+
+<% @image_copyrights.each do |image_copyright| %>
+  <tr>
+    <td><%=h image_copyright.property %></td>
+    <td><%=h image_copyright.value %></td>
+    <td><%=h image_copyright.extraValue %></td>
+    <td><%= link_to 'Show', image_copyright %></td>
+    <td><%= link_to 'Edit', edit_image_copyright_path(image_copyright) %></td>
+    <td><%= link_to 'Destroy', image_copyright, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_copyright', new_image_copyright_path %>

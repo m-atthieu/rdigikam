@@ -1,0 +1,2 @@
+module ImageHaarMatricesHelper
+end

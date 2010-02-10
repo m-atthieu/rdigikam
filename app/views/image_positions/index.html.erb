@@ -1,0 +1,38 @@
+<h1>Listing image_positions</h1>
+
+<table>
+  <tr>
+    <th>Latitude</th>
+    <th>Latitudenumber</th>
+    <th>Longitude</th>
+    <th>Longitudenumber</th>
+    <th>Altitude</th>
+    <th>Orientation</th>
+    <th>Tilt</th>
+    <th>Roll</th>
+    <th>Accuracy</th>
+    <th>Description</th>
+  </tr>
+
+<% @image_positions.each do |image_position| %>
+  <tr>
+    <td><%=h image_position.latitude %></td>
+    <td><%=h image_position.latitudeNumber %></td>
+    <td><%=h image_position.longitude %></td>
+    <td><%=h image_position.longitudeNumber %></td>
+    <td><%=h image_position.altitude %></td>
+    <td><%=h image_position.orientation %></td>
+    <td><%=h image_position.tilt %></td>
+    <td><%=h image_position.roll %></td>
+    <td><%=h image_position.accuracy %></td>
+    <td><%=h image_position.description %></td>
+    <td><%= link_to 'Show', image_position %></td>
+    <td><%= link_to 'Edit', edit_image_position_path(image_position) %></td>
+    <td><%= link_to 'Destroy', image_position, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image_position', new_image_position_path %>

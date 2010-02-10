@@ -1,0 +1,53 @@
+<p>
+  <b>Latitude:</b>
+  <%=h @image_position.latitude %>
+</p>
+
+<p>
+  <b>Latitudenumber:</b>
+  <%=h @image_position.latitudeNumber %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @image_position.longitude %>
+</p>
+
+<p>
+  <b>Longitudenumber:</b>
+  <%=h @image_position.longitudeNumber %>
+</p>
+
+<p>
+  <b>Altitude:</b>
+  <%=h @image_position.altitude %>
+</p>
+
+<p>
+  <b>Orientation:</b>
+  <%=h @image_position.orientation %>
+</p>
+
+<p>
+  <b>Tilt:</b>
+  <%=h @image_position.tilt %>
+</p>
+
+<p>
+  <b>Roll:</b>
+  <%=h @image_position.roll %>
+</p>
+
+<p>
+  <b>Accuracy:</b>
+  <%=h @image_position.accuracy %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @image_position.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_position_path(@image_position) %> |
+<%= link_to 'Back', image_positions_path %>

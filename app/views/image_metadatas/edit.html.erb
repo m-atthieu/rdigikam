@@ -1,0 +1,72 @@
+<h1>Editing image_metadata</h1>
+
+<% form_for(@image_metadata) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :make %><br />
+    <%= f.text_field :make %>
+  </p>
+  <p>
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :lens %><br />
+    <%= f.text_field :lens %>
+  </p>
+  <p>
+    <%= f.label :focalLength %><br />
+    <%= f.text_field :focalLength %>
+  </p>
+  <p>
+    <%= f.label :focalLength35 %><br />
+    <%= f.text_field :focalLength35 %>
+  </p>
+  <p>
+    <%= f.label :exposureTime %><br />
+    <%= f.text_field :exposureTime %>
+  </p>
+  <p>
+    <%= f.label :exposureProgram %><br />
+    <%= f.text_field :exposureProgram %>
+  </p>
+  <p>
+    <%= f.label :exposureMode %><br />
+    <%= f.text_field :exposureMode %>
+  </p>
+  <p>
+    <%= f.label :sensitivity %><br />
+    <%= f.text_field :sensitivity %>
+  </p>
+  <p>
+    <%= f.label :flash %><br />
+    <%= f.text_field :flash %>
+  </p>
+  <p>
+    <%= f.label :whiteBalance %><br />
+    <%= f.text_field :whiteBalance %>
+  </p>
+  <p>
+    <%= f.label :whiteBalanceColorTemperature %><br />
+    <%= f.text_field :whiteBalanceColorTemperature %>
+  </p>
+  <p>
+    <%= f.label :meteringMode %><br />
+    <%= f.text_field :meteringMode %>
+  </p>
+  <p>
+    <%= f.label :subjectDistance %><br />
+    <%= f.text_field :subjectDistance %>
+  </p>
+  <p>
+    <%= f.label :subjectDistanceCategory %><br />
+    <%= f.text_field :subjectDistanceCategory %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @image_metadata %> |
+<%= link_to 'Back', image_metadatas_path %>

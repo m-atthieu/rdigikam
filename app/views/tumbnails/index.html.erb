@@ -1,0 +1,26 @@
+<h1>Listing tumbnails</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Modificationdate</th>
+    <th>Orientationhint</th>
+    <th>Date</th>
+  </tr>
+
+<% @tumbnails.each do |tumbnail| %>
+  <tr>
+    <td><%=h tumbnail.type %></td>
+    <td><%=h tumbnail.modificationDate %></td>
+    <td><%=h tumbnail.orientationHint %></td>
+    <td><%=h tumbnail.date %></td>
+    <td><%= link_to 'Show', tumbnail %></td>
+    <td><%= link_to 'Edit', edit_tumbnail_path(tumbnail) %></td>
+    <td><%= link_to 'Destroy', tumbnail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tumbnail', new_tumbnail_path %>
