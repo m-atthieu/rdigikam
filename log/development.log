@@ -1,0 +1,1855 @@
+
+
+Processing TagsController#index (for 192.168.0.5 at 2010-02-10 22:31:32) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  app/models/digikam_db.rb:2
+  app/models/tag.rb:1
+  app/controllers/tags_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.4ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TagsController#index (for 192.168.0.5 at 2010-02-10 22:32:20) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/tag.rb:1
+  app/controllers/tags_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TagsController#index (for 192.168.0.5 at 2010-02-10 22:35:53) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `delegates_connection_to' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/tag.rb:1
+  app/controllers/tags_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (97.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TagsController#index (for 192.168.0.5 at 2010-02-10 22:37:56) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `delegates_connection_to' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/tag.rb:1
+  app/controllers/tags_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumRootsController#index (for 192.168.0.5 at 2010-02-10 22:38:12) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `delegates_connection_to' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/album_root.rb:1
+  app/controllers/album_roots_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (205.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 192.168.0.5 at 2010-02-10 22:38:32) [GET]
+
+ActionController::RoutingError (No route matches "/thumbnails" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.5 at 2010-02-10 22:39:11) [GET]
+
+ActionController::RoutingError (No route matches "/thumbnails" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.5 at 2010-02-10 22:43:44) [GET]
+
+ActionController::RoutingError (No route matches "/thumbnails" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.5 at 2010-02-10 22:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/thumbnails" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ThumbnailsController#index (for 192.168.0.5 at 2010-02-10 22:44:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `delegates_connection_to' for ThumbnailDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/thumbnail_db.rb:2
+  app/models/thumbnail.rb:1
+  app/controllers/thumbnails_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (132.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mThumbnail Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: thumbnails: SELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;36;1mImage Load (12.9ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+
+
+Processing ThumbnailsController#index (for 192.168.0.5 at 2010-02-10 22:48:42) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for ThumbnailDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/thumbnail_db.rb:2
+  app/models/thumbnail.rb:1
+  app/controllers/thumbnails_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUniqueHash Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: unique_hashes: SELECT * FROM "unique_hashes" LIMIT 1[0m
+  [4;36;1mUniqueHash Load (1.4ms)[0m   [0;1mSELECT * FROM "uniquehashes" LIMIT 1[0m
+
+
+Processing UniqueHashesController#index (for 192.168.0.5 at 2010-02-10 22:50:57) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for ThumbnailDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/thumbnail_db.rb:2
+  app/models/unique_hash.rb:1
+  app/controllers/unique_hashes_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (175.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UniqueHashesController#index (for 192.168.0.5 at 2010-02-10 23:04:02) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for ThumbnailDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/thumbnail_db.rb:2
+  app/models/unique_hash.rb:1
+  app/controllers/unique_hashes_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TagsController#index (for 192.168.0.5 at 2010-02-10 23:04:11) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/tag.rb:1
+  app/controllers/tags_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#index (for 192.168.0.5 at 2010-02-10 23:04:18) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/image.rb:1
+  app/controllers/images_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mUniqueHash Load (0.7ms)[0m   [0mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;36;1mImage Load (2.0ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+  [4;35;1mAlbum Load (16.1ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mImage Load (2.0ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+  [4;35;1mAlbum Load (1.0ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.8ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mImage Load (2.1ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImage Load (1.0ms)[0m   [0mSELECT * FROM "images" LIMIT 1[0m
+  [4;36;1mAlbum Load (0.9ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.8ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+
+
+Processing ImagesController#index (for 192.168.0.5 at 2010-02-10 23:13:38) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/image.rb:1
+  app/controllers/images_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#index (for 192.168.0.5 at 2010-02-10 23:29:24) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/image.rb:1
+  app/controllers/images_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (143.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#index (for 192.168.0.5 at 2010-02-10 23:56:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `handles_connection_for' for DigikamDb(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/digikam_db.rb:2
+  app/models/image.rb:1
+  app/controllers/images_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:03:44) [GET]
+  [4;36;1mSQL (2.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `set_inheritance_type' for Thumbnail(Table doesn't exist):Class):
+  /home/furai/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/thumbnail.rb:2
+  app/controllers/thumbnails_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (4.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:04:33) [GET]
+  [4;36;1mThumbnail Load (3772.1ms)[0m   [0;1mSELECT * FROM "thumbnails" [0m
+
+ActionView::MissingTemplate (Missing template thumbnails/index.erb in view path app/views):
+  app/controllers/thumbnails_controller.rb:7:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:06:25) [GET]
+  [4;35;1mThumbnail Load (3030.9ms)[0m   [0mSELECT * FROM "thumbnails" [0m
+Rendering thumbnails/index
+
+ActionView::TemplateError (undefined method `date' for #<Thumbnail:0xb5ef7f58>) on line #16 of app/views/thumbnails/index.html.erb:
+13:     <td><%=h thumbnail.type %></td>
+14:     <td><%=h thumbnail.modificationDate %></td>
+15:     <td><%=h thumbnail.orientationHint %></td>
+16:     <td><%=h thumbnail.date %></td>
+17:     <td><%= link_to 'Show', thumbnail %></td>
+18:     <td><%= link_to 'Edit', edit_thumbnail_path(thumbnail) %></td>
+19:     <td><%= link_to 'Destroy', thumbnail, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/thumbnails/index.html.erb:16
+    app/views/thumbnails/index.html.erb:11:in `each'
+    app/views/thumbnails/index.html.erb:11
+    app/controllers/thumbnails_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:07:32) [GET]
+  [4;36;1mThumbnail Load (2813.8ms)[0m   [0;1mSELECT * FROM "thumbnails" [0m
+Rendering thumbnails/index
+
+ActionView::TemplateError (undefined method `date' for #<Thumbnail:0xb5f50400>) on line #16 of app/views/thumbnails/index.html.erb:
+13:     <td><%=h thumbnail.type %></td>
+14:     <td><%=h thumbnail.modificationDate %></td>
+15:     <td><%=h thumbnail.orientationHint %></td>
+16:     <td><%=h thumbnail.date %></td>
+17:     <td><%= link_to 'Show', thumbnail %></td>
+18:     <td><%= link_to 'Edit', edit_thumbnail_path(thumbnail) %></td>
+19:     <td><%= link_to 'Destroy', thumbnail, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/thumbnails/index.html.erb:16
+    app/views/thumbnails/index.html.erb:11:in `each'
+    app/views/thumbnails/index.html.erb:11
+    app/controllers/thumbnails_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:08:18) [GET]
+  [4;35;1mThumbnail Load (2745.4ms)[0m   [0mSELECT * FROM "thumbnails" [0m
+Rendering thumbnails/index
+Completed in 81351ms (View: 78145, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:09:40) [GET]
+  [4;36;1mThumbnail Load (7.7ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (24.9ms)[0m   [0mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering thumbnails/index
+Completed in 305ms (View: 238, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 10:10:36) [GET]
+  [4;36;1mThumbnail Load (7.3ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (24.2ms)[0m   [0mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering thumbnails/index
+Completed in 341ms (View: 264, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ApplicationController#index (for 89.251.59.94 at 2010-02-11 10:10:50) [GET]
+
+ActionController::RoutingError (No route matches "/albums_roots" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing AlbumRootsController#index (for 89.251.59.94 at 2010-02-11 10:10:59) [GET]
+  [4;36;1mAlbumRoot Load (8.7ms)[0m   [0;1mSELECT * FROM "albumroots" [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/index
+Completed in 188ms (View: 120, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots]
+
+
+Processing AlbumRootsController#index (for 89.251.59.94 at 2010-02-11 10:12:30) [GET]
+  [4;35;1mAlbumRoot Load (3.9ms)[0m   [0mSELECT * FROM "albumroots" [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/index
+Completed in 67ms (View: 14, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots]
+
+
+Processing ImagesController#index (for 89.251.59.94 at 2010-02-11 10:14:19) [GET]
+  [4;36;1mImage Load (14.5ms)[0m   [0;1mSELECT * FROM "images" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (3331.2ms)[0m   [0mSELECT count(*) AS count_all FROM "images" [0m
+Rendering template within layouts/images
+Rendering images/index
+Completed in 3539ms (View: 131, DB: 0) | 200 OK [http://furai.hd.free.fr/images]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 10:14:38) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18) [0m
+Rendering template within layouts/images
+Rendering images/show
+Completed in 68ms (View: 33, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18]
+
+
+Processing AlbumsController#index (for 89.251.59.94 at 2010-02-11 10:15:51) [GET]
+  [4;35;1mAlbum Load (5.8ms)[0m   [0mSELECT * FROM "albums" LIMIT 30 OFFSET 0[0m
+  [4;36;1mSQL (16.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "albums" [0m
+Rendering template within layouts/albums
+Rendering albums/index
+Completed in 124ms (View: 62, DB: 0) | 200 OK [http://furai.hd.free.fr/albums]
+
+
+Processing AlbumsController#index (for 89.251.59.94 at 2010-02-11 10:15:58) [GET]
+  Parameters: {"page"=>"54"}
+  [4;35;1mAlbum Load (48.0ms)[0m   [0mSELECT * FROM "albums" LIMIT 30 OFFSET 1590[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "albums" [0m
+Rendering template within layouts/albums
+Rendering albums/index
+Completed in 120ms (View: 40, DB: 0) | 200 OK [http://furai.hd.free.fr/albums?page=54]
+
+
+Processing AlbumsController#show (for 89.251.59.94 at 2010-02-11 10:16:09) [GET]
+  Parameters: {"id"=>"1", "page"=>"54"}
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+Completed in 255ms (View: 224, DB: 0) | 200 OK [http://furai.hd.free.fr/albums/1?page=54]
+
+
+Processing AlbumsController#index (for 89.251.59.94 at 2010-02-11 10:16:15) [GET]
+  [4;36;1mAlbum Load (11.6ms)[0m   [0;1mSELECT * FROM "albums" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "albums" [0m
+Rendering template within layouts/albums
+Rendering albums/index
+Completed in 108ms (View: 37, DB: 0) | 200 OK [http://furai.hd.free.fr/albums]
+
+
+Processing AlbumRootsController#index (for 89.251.59.94 at 2010-02-11 10:54:39) [GET]
+  [4;36;1mAlbumRoot Load (2.5ms)[0m   [0;1mSELECT * FROM "albumroots" [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/index
+Completed in 61ms (View: 8, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots]
+
+
+Processing AlbumRootsController#show (for 89.251.59.94 at 2010-02-11 10:54:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbumRoot Load (1.2ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/show
+Completed in 92ms (View: 34, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots/3]
+
+
+Processing AlbumRootsController#show (for 89.251.59.94 at 2010-02-11 10:55:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/show
+ERROR: compiling _run_erb_app47views47album_roots47show46html46erb RAISED compile error
+/home/furai/code/rdk/app/views/album_roots/show.html.erb:29: syntax error, unexpected tASSOC, expecting ')'
+    oller => "albums", :action => 'show', ...
+            ^
+/home/furai/code/rdk/app/views/album_roots/show.html.erb:29: syntax error, unexpected ',', expecting ')'
+    oller => "albums", :action => 'show', :id => alb...
+                      ^
+/home/furai/code/rdk/app/views/album_roots/show.html.erb:29: syntax error, unexpected ',', expecting ')'
+...> "albums", :action => 'show', :id => album ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47album_roots47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p>\n"
+@output_buffer.concat "  <b>Label:</b>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @album_root.label ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <b>Status:</b>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @album_root.status ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <b>Type:</b>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @album_root.type ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <b>Identifier:</b>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @album_root.identifier ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <b>Specificpath:</b>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @album_root.specificPath ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+ @album_root.albums.each do |album| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( h album.id ).to_s); @output_buffer.concat " / "; @output_buffer.concat(( h album.relativePath ).to_s); @output_buffer.concat " / "; @output_buffer.concat(( link_to 'show', :contr
+    oller => "albums", :action => 'show', :id => album ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'Back', album_roots_path ).to_s); @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/furai/code/rdk/app/views/album_roots/show.html.erb:37:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/furai/code/rdk/app/controllers/album_roots_controller.rb:18:in `show'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/furai/code/rdk/app/views/album_roots/show.html.erb:29: syntax error, unexpected tASSOC, expecting ')'
+    oller => "albums", :action => 'show', ...
+            ^
+/home/furai/code/rdk/app/views/album_roots/show.html.erb:29: syntax error, unexpected ',', expecting ')'
+    oller => "albums", :action => 'show', :id => alb...
+                      ^
+/home/furai/code/rdk/app/views/album_roots/show.html.erb:29: syntax error, unexpected ',', expecting ')'
+...> "albums", :action => 'show', :id => album ).to_s); @output...
+                              ^) on line #29 of app/views/album_roots/show.html.erb:
+26: <% @album_root.albums.each do |album| %>
+27:   <p>
+28:     <%= h album.id %> / <%= h album.relativePath %> / <%= link_to 'show', :contr
+29:     oller => "albums", :action => 'show', :id => album %>
+30:   </p>
+31: <% end %>
+32: 
+
+    app/views/album_roots/show.html.erb:37:in `compile!'
+    app/controllers/album_roots_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumRootsController#show (for 89.251.59.94 at 2010-02-11 10:55:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/show
+  [4;36;1mAlbum Load (6.1ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums".albumRoot = 3) [0m
+Completed in 84ms (View: 51, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots/3]
+
+
+Processing AlbumRootsController#show (for 89.251.59.94 at 2010-02-11 10:56:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbumRoot Load (0.6ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/show
+  [4;36;1mAlbum Load (6.0ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums".albumRoot = 3) [0m
+Completed in 96ms (View: 49, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots/3]
+
+
+Processing AlbumRootsController#show (for 89.251.59.94 at 2010-02-11 10:57:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Rendering template within layouts/album_roots
+Rendering album_roots/show
+  [4;36;1mAlbum Load (6.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums".albumRoot = 3) [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://furai.hd.free.fr/album_roots/3]
+
+
+Processing AlbumsController#show (for 89.251.59.94 at 2010-02-11 10:57:36) [GET]
+  Parameters: {"id"=>"1594"}
+  [4;35;1mAlbum Load (0.8ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+Completed in 67ms (View: 10, DB: 0) | 200 OK [http://furai.hd.free.fr/albums/1594]
+
+
+Processing AlbumsController#show (for 89.251.59.94 at 2010-02-11 10:59:46) [GET]
+  Parameters: {"id"=>"1594"}
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+Rendering template within layouts/albums
+Rendering albums/show
+  [4;35;1mImage Load (2.1ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album = 1594) [0m
+Completed in 223ms (View: 193, DB: 0) | 200 OK [http://furai.hd.free.fr/albums/1594]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 10:59:55) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+Completed in 44ms (View: 7, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:02:40) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `alubm' for #<Image:0xb5d867f0>) on line #8 of app/views/images/show.html.erb:
+5: 
+6: <p>
+7:   <b>Album</b>
+8:   <%=h @image.alubm.relativePath %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/images/show.html.erb:8
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:02:49) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Completed in 64ms (View: 31, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:23:28) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.6ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+Completed in 69ms (View: 29, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:23:47) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (1.0ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `image_metatdata' for #<Image:0xb5d83744>) on line #41 of app/views/images/show.html.erb:
+38:   <%=h @image.uniqueHash %>
+39: </p>
+40: 
+41: <% render :partial => @image.image_metatdata %>
+42: 
+43: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:41
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:24:36) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+
+ActionView::TemplateError (undefined method `image_metatdata' for #<Image:0xb5baf6d4>) on line #41 of app/views/images/show.html.erb:
+38:   <%=h @image.uniqueHash %>
+39: </p>
+40: 
+41: <% render :partial => @image.image_metatdata %>
+42: 
+43: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:41
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mImage Load (2.1ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+  [4;35;1mImageMetadata Load (0.9ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+
+
+Processing ApplicationController#index (for 89.251.59.94 at 2010-02-11 11:25:24) [GET]
+
+ActionController::RoutingError (No route matches "/image_metadata/18135" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImageMetadatasController#show (for 89.251.59.94 at 2010-02-11 11:25:32) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImageMetadata Load (0.5ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata"."imageid" = 18135) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ImageMetadata with ID=18135):
+  app/controllers/image_metadatas_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ImageMetadatasController#show (for 89.251.59.94 at 2010-02-11 11:25:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImageMetadata Load (0.8ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata"."imageid" = 1) [0m
+Rendering template within layouts/image_metadatas
+Rendering image_metadatas/show
+Completed in 100ms (View: 68, DB: 0) | 200 OK [http://furai.hd.free.fr/image_metadatas/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:27:52) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;35;1mImageMetadata Load (0.4ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 320ms (View: 49, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:28:05) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;35;1mImageMetadata Load (0.3ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?) on line #41 of app/views/images/show.html.erb:
+38:   <%=h @image.uniqueHash %>
+39: </p>
+40: 
+41: <% render @image.image_metadata %>
+42: 
+43: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:41
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:28:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.8ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (Missing template image_metadatas/_image_metadata.erb in view path app/views) on line #41 of app/views/images/show.html.erb:
+38:   <%=h @image.uniqueHash %>
+39: </p>
+40: 
+41: <% render @image.image_metadata %>
+42: 
+43: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:41
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (238.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:29:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `is' for #<ActionView::Base:0xb5dba08c>) on line #41 of app/views/images/show.html.erb:
+38:   <%=h @image.uniqueHash %>
+39: </p>
+40: 
+41: <% if not @image.image_metadata is nil %>
+42: <% render @image.image_metadata %>
+43: <% end %>
+44: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:41
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:29:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.4ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (Missing template image_metadatas/_image_metadata.erb in view path app/views) on line #42 of app/views/images/show.html.erb:
+39: </p>
+40: 
+41: <% if not @image.image_metadata == nil %>
+42: <% render @image.image_metadata %>
+43: <% end %>
+44: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:42
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:29:16) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;36;1mImageMetadata Load (0.4ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 66ms (View: 32, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:29:23) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.4ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;36;1mImageMetadata Load (0.3ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 93ms (View: 38, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:29:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (Missing template image_metadatas/_image_metadata.erb in view path app/views) on line #42 of app/views/images/show.html.erb:
+39: </p>
+40: 
+41: <% if not @image.image_metadata == nil %>
+42:   <% render @image.image_metadata %>
+43: <% end %>
+44: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:42
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:30:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.make) on line #3 of app/views/image_metadatas/_image_metadata.erb:
+1: <p>
+2:   <b>Make:</b>
+3:   <%=h @image_metadata.make %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/image_metadatas/_image_metadata.erb:3
+    app/views/images/show.html.erb:42
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:30:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.9ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.model) on line #8 of app/views/image_metadatas/_image_metadata.erb:
+5: 
+6: <p>
+7:   <b>Model:</b>
+8:   <%=h @image_metadata.model %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/image_metadatas/_image_metadata.erb:8
+    app/views/images/show.html.erb:42
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:35:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (11.9ms)
+Completed in 114ms (View: 71, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:38:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.7ms)
+Completed in 108ms (View: 49, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:38:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.9ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.8ms)
+Completed in 87ms (View: 50, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:38:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.9ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.7ms)
+Completed in 84ms (View: 49, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:39:33) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;36;1mImageMetadata Load (0.3ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 78ms (View: 39, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:41:39) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.6ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.6ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;36;1mImageMetadata Load (0.4ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 273ms (View: 51, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:44:32) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;36;1mImageMetadata Load (0.3ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 79ms (View: 32, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:44:44) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;36;1mImageMetadata Load (0.3ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+Completed in 67ms (View: 31, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:44:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.4ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.6ms)
+Completed in 98ms (View: 40, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:47:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.9ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.9ms)
+
+ActionView::TemplateError (Unknown key(s): foregin_key) on line #45 of app/views/images/show.html.erb:
+42: <%= render :partial => @image.image_metadata %>
+43: 
+44: <h2>Image Information</h2>
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+
+    (eval):3:in `belongs_to'
+    app/models/image_information.rb:4
+    app/views/images/show.html.erb:45
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:47:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.6ms)
+
+ActionView::TemplateError (Unknown key(s): forgein_key) on line #45 of app/views/images/show.html.erb:
+42: <%= render :partial => @image.image_metadata %>
+43: 
+44: <h2>Image Information</h2>
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+
+    (eval):3:in `belongs_to'
+    app/models/image_information.rb:4
+    app/views/images/show.html.erb:45
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (255.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:48:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.6ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.9ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.9ms)
+
+ActionView::TemplateError (Unknown key(s): forgein_key) on line #45 of app/views/images/show.html.erb:
+42: <%= render :partial => @image.image_metadata %>
+43: 
+44: <h2>Image Information</h2>
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+
+    (eval):3:in `belongs_to'
+    app/models/image_information.rb:4
+    app/views/images/show.html.erb:45
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:49:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.5ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (0.8ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.5ms)
+  [4;35;1mImageInformation Load (4.0ms)[0m   [0mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (Missing template image_informations/_image_information.erb in view path app/views) on line #45 of app/views/images/show.html.erb:
+42: <%= render :partial => @image.image_metadata %>
+43: 
+44: <h2>Image Information</h2>
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+
+    app/views/images/show.html.erb:45
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (241.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:51:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.9ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.8ms)
+  [4;36;1mImageInformation Load (0.7ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (11.5ms)
+  [4;35;1mImageComment Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: image_comments: SELECT * FROM "image_comments" WHERE ("image_comments".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such table: image_comments: SELECT * FROM "image_comments" WHERE ("image_comments".imageid = 1)  LIMIT 1) on line #48 of app/views/images/show.html.erb:
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+49: 
+50: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:48
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:51:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.9ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.9ms)
+  [4;36;1mImageInformation Load (0.7ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (6.3ms)
+  [4;35;1mImageComment Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: iamgecomment: SELECT * FROM "iamgecomment" WHERE ("iamgecomment".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such table: iamgecomment: SELECT * FROM "iamgecomment" WHERE ("iamgecomment".imageid = 1)  LIMIT 1) on line #48 of app/views/images/show.html.erb:
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+49: 
+50: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:48
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:52:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.8ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.6ms)
+  [4;36;1mImageInformation Load (0.7ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (5.6ms)
+  [4;35;1mImageComment Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: iamgecomments: SELECT * FROM "iamgecomments" WHERE ("iamgecomments".imageid = 1) LIMIT 1[0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such table: iamgecomments: SELECT * FROM "iamgecomments" WHERE ("iamgecomments".imageid = 1)  LIMIT 1) on line #48 of app/views/images/show.html.erb:
+45: <%= render :partial => @image.image_information %>
+46: 
+47: <h2>Image Comment</h2>
+48: <%= render :partial => @image.image_comment %>
+49: 
+50: <%= link_to 'Back', images_path %>
+
+    app/views/images/show.html.erb:48
+    app/controllers/images_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:52:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.9ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (16.9ms)
+  [4;36;1mImageInformation Load (0.7ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (6.0ms)
+  [4;35;1mImageComment Load (17.9ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 1) LIMIT 1[0m
+Completed in 125ms (View: 89, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:54:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.6ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.9ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.7ms)
+  [4;36;1mImageInformation Load (0.6ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (6.2ms)
+  [4;35;1mImageComment Load (0.3ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 1) LIMIT 1[0m
+Completed in 97ms (View: 62, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 11:57:32) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;36;1mAlbumRoot Load (0.4ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;35;1mImageMetadata Load (0.3ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+  [4;36;1mImageInformation Load (18.8ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 18135) LIMIT 1[0m
+Rendered image_informations/_image_information (5.7ms)
+  [4;35;1mImageComment Load (0.3ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 18135) LIMIT 1[0m
+Completed in 100ms (View: 66, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
