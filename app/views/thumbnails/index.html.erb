@@ -1,0 +1,24 @@
+<h1>Listing thumbnails</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Modificationdate</th>
+    <th>Orientationhint</th>
+    <th>Date</th>
+  </tr>
+
+<% @thumbnails.each do |thumbnail| %>
+  <tr>
+    <td><%=h thumbnail.type %></td>
+    <td><%=h thumbnail.modificationDate %></td>
+    <td><%=h thumbnail.orientationHint %></td>
+    <td><%=h 'thumbnail.data' %></td>
+    <td><%= link_to 'Show', thumbnail %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= will_paginate @thumbnails %>
