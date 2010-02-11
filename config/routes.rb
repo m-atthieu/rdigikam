@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :file_paths
 
-  map.resources :tumbnails
+  map.resources :thumbnails
 
   map.resources :unique_hashes
 
