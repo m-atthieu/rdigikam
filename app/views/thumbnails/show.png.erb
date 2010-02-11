@@ -1,0 +1,14 @@
+<% require 'tempfile'
+   t1 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+   t1_pgf = File.open(t1.path + ".pgf", "w")
+   t1_pgf.write(@thumbnail.data)
+   t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+   result = %x[pgf -d #{t1_pgf.path} #{t2.path}.png]
+   t1.close!
+   t3 = File.open(t2.path + ".png")
+   png_data = t3.read
+   t2.unlink
+   t3.close
+   File.unlink(t3.path)
+   File.unlink(t1_pgf.path)
+%><%= png_data %>

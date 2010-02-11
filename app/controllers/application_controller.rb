@@ -3,6 +3,9 @@
 
 require "will_paginate"
 
+Mime::Type.register "image/png", :png
+Mime::Type.register "image/pgf", :pgf
+
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
