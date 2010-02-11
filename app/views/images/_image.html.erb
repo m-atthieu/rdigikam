@@ -1,0 +1,49 @@
+<p>
+  <b>Album Root</b>
+  <%=h @image.album.album_root.specificPath %>
+</p>
+
+<p>
+  <b>Album</b>
+  <%=h @image.album.relativePath %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @image.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @image.status %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @image.category %>
+</p>
+
+<p>
+  <b>Modification Date:</b>
+  <%=h @image.modificationDate %>
+</p>
+
+<p>
+  <b>Filesize:</b>
+  <%=h @image.fileSize %>
+</p>
+
+<p>
+  <b>Unique Hash:</b>
+  <%=h @image.uniqueHash %>
+</p>
+
+<h2>Image Metadata</h2>
+<%= render :partial => @image.image_metadata %>
+
+<h2>Image Information</h2>
+<%= render :partial => @image.image_information %>
+
+<h2>Image Comment</h2>
+<%= render :partial => @image.image_comment %>
+ 
