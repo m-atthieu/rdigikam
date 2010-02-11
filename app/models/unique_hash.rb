@@ -1,2 +1,3 @@
-class UniqueHash < ActiveRecord::Base
+class UniqueHash < ThumbnailDb
+	set_table_name "uniquehashes"
 end
