@@ -1,33 +1,3 @@
-<p>
-  <b>Name:</b>
-  <%=h @image.name %>
-</p>
+<%= render :partial => @image %>
 
-<p>
-  <b>Status:</b>
-  <%=h @image.status %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%=h @image.category %>
-</p>
-
-<p>
-  <b>Modificationdate:</b>
-  <%=h @image.modificationDate %>
-</p>
-
-<p>
-  <b>Filesize:</b>
-  <%=h @image.fileSize %>
-</p>
-
-<p>
-  <b>Uniquehash:</b>
-  <%=h @image.uniqueHash %>
-</p>
-
-
-<%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>

@@ -17,12 +17,8 @@
     <td><%=h album_root.identifier %></td>
     <td><%=h album_root.specificPath %></td>
     <td><%= link_to 'Show', album_root %></td>
-    <td><%= link_to 'Edit', edit_album_root_path(album_root) %></td>
-    <td><%= link_to 'Destroy', album_root, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New album_root', new_album_root_path %>

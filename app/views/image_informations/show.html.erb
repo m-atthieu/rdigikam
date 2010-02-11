@@ -1,43 +1,4 @@
-<p>
-  <b>Rating:</b>
-  <%=h @image_information.rating %>
-</p>
-
-<p>
-  <b>Creationdate:</b>
-  <%=h @image_information.creationDate %>
-</p>
-
-<p>
-  <b>Orientation:</b>
-  <%=h @image_information.orientation %>
-</p>
-
-<p>
-  <b>Width:</b>
-  <%=h @image_information.width %>
-</p>
-
-<p>
-  <b>Height:</b>
-  <%=h @image_information.height %>
-</p>
-
-<p>
-  <b>Format:</b>
-  <%=h @image_information.format %>
-</p>
-
-<p>
-  <b>Colordepth:</b>
-  <%=h @image_information.colorDepth %>
-</p>
-
-<p>
-  <b>Colormodel:</b>
-  <%=h @image_information.colorModel %>
-</p>
-
+<%= render :partial => @image_information %>
 
 <%= link_to 'Edit', edit_image_information_path(@image_information) %> |
 <%= link_to 'Back', image_informations_path %>

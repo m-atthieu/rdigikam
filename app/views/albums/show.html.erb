@@ -23,6 +23,13 @@
   <%=h @album.icon %>
 </p>
 
-
-<%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
+
+<h2>Images</h2>
+<table>
+<% @album.images.each do |image| %>
+  <tr>
+    <td><%= link_to 'image', :controller => "images", :action => 'show', :id => image %></td>
+  </tr>
+<% end %>
+</table>
