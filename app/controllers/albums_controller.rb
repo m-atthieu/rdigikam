@@ -2,7 +2,7 @@ class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.xml
   def index
-    @albums = Album.all
+    @albums = Album.paginate :page => params[:page]
 
     respond_to do |format|
       format.html # index.html.erb
