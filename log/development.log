@@ -1853,3 +1853,1456 @@ Rendering images/show
 Rendered image_informations/_image_information (5.7ms)
   [4;35;1mImageComment Load (0.3ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 18135) LIMIT 1[0m
 Completed in 100ms (View: 66, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 12:13:51) [GET]
+  Parameters: {"id"=>"18135"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 18135) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 1594) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 3) [0m
+  [4;35;1mImageMetadata Load (0.3ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 18135) LIMIT 1[0m
+  [4;36;1mImageInformation Load (0.7ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 18135) LIMIT 1[0m
+Rendered image_informations/_image_information (6.0ms)
+  [4;35;1mImageComment Load (0.3ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 18135) LIMIT 1[0m
+Completed in 250ms (View: 52, DB: 0) | 200 OK [http://furai.hd.free.fr/images/18135]
+  [4;36;1mImage Load (2.1ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+  [4;35;1mImage Load (0.9ms)[0m   [0mSELECT * FROM "images" LIMIT 1[0m
+  [4;36;1mImage Load (2.0ms)[0m   [0;1mSELECT * FROM "images" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (21.2ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".uniquehash = 1) LIMIT 1[0m
+  [4;36;1mUniqueHash Load (45.2ms)[0m   [0;1mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (0.4ms)[0m   [0mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;36;1mUniqueHash Load (0.9ms)[0m   [0;1mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;35;1mThumbnail Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: thumbnails.thumbid: SELECT * FROM "thumbnails" WHERE ("thumbnails".thumbid = NULL) LIMIT 1[0m
+  [4;36;1mUniqueHash Load (0.9ms)[0m   [0;1mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;36;1mUniqueHash Load (0.9ms)[0m   [0;1mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (0.9ms)[0m   [0mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;36;1mUniqueHash Load (0.7ms)[0m   [0;1mSELECT * FROM "uniquehashes" LIMIT 1[0m
+  [4;35;1mThumbnail Load (25.3ms)[0m   [0mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;36;1mThumbnail Load (0.8ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (1.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (0.8ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mFilePath Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: FilePath: SELECT * FROM "FilePath" WHERE ("FilePath".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (1.1ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mFilePath Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: FilePath: SELECT * FROM "FilePath" WHERE ("FilePath".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (1.2ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mFilePath Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: file_paths: SELECT * FROM "file_paths" WHERE ("file_paths".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mFilePath Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: file_paths: SELECT * FROM "file_paths" WHERE ("file_paths".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (1.1ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mFilePath Load (22.7ms)[0m   [0mSELECT * FROM "filepaths" WHERE ("filepaths".thumbid = 1) LIMIT 1[0m
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 13:06:16) [GET]
+  [4;36;1mThumbnail Load (21.1ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (2131.3ms)[0m   [0mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering thumbnails/index
+Completed in 2343ms (View: 136, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 13:06:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 1) [0m
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (3.9ms)
+Completed in 45ms (View: 17, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/1]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 13:06:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 1) [0m
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (3.9ms)
+Completed in 39ms (View: 11, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/1]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 13:07:24) [GET]
+  [4;36;1mThumbnail Load (14.7ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (109.4ms)[0m   [0mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/index
+Completed in 400ms (View: 246, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 13:07:55) [GET]
+  [4;36;1mThumbnail Load (8.1ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (26.1ms)[0m   [0mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/index
+Completed in 121ms (View: 53, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 13:07:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mThumbnail Load (0.5ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 1) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (5.0ms)
+Completed in 42ms (View: 13, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/1]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 13:22:28) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (10.0ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (6.9ms)
+Completed in 125ms (View: 27, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 13:22:48) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (4.9ms)
+Completed in 61ms (View: 8, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 13:24:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (2.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;36;1mAlbum Load (8.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;35;1mAlbumRoot Load (0.9ms)[0m   [0mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;36;1mImageMetadata Load (8.3ms)[0m   [0;1mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (15.6ms)
+  [4;35;1mImageInformation Load (1.4ms)[0m   [0mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (11.4ms)
+  [4;36;1mImageComment Load (9.7ms)[0m   [0;1mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 1) LIMIT 1[0m
+Rendered images/_image (166.2ms)
+Completed in 293ms (View: 243, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#show to xml (for 89.251.59.94 at 2010-02-11 13:25:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+Completed in 59ms (View: 15, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1.xml]
+
+
+Processing ImagesController#show to json (for 89.251.59.94 at 2010-02-11 13:25:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Completed in 39ms (View: 1, DB: 0) | 406 Not Acceptable [http://furai.hd.free.fr/images/1.json]
+
+
+Processing ImagesController#show to html (for 89.251.59.94 at 2010-02-11 13:25:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.8ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (7.7ms)
+  [4;36;1mImageInformation Load (0.6ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (5.8ms)
+  [4;35;1mImageComment Load (0.3ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 1) LIMIT 1[0m
+Rendered images/_image (55.5ms)
+Completed in 91ms (View: 59, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1.html]
+
+
+Processing ImagesController#show (for 89.251.59.94 at 2010-02-11 13:25:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.5ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 5) [0m
+  [4;36;1mAlbumRoot Load (0.5ms)[0m   [0;1mSELECT * FROM "albumroots" WHERE ("albumroots"."id" = 1) [0m
+  [4;35;1mImageMetadata Load (0.9ms)[0m   [0mSELECT * FROM "imagemetadata" WHERE ("imagemetadata".imageid = 1) LIMIT 1[0m
+Rendered image_metadatas/_image_metadata (8.4ms)
+  [4;36;1mImageInformation Load (0.7ms)[0m   [0;1mSELECT * FROM "imageinformation" WHERE ("imageinformation".imageid = 1) LIMIT 1[0m
+Rendered image_informations/_image_information (6.1ms)
+  [4;35;1mImageComment Load (0.3ms)[0m   [0mSELECT * FROM "imagecomments" WHERE ("imagecomments".imageid = 1) LIMIT 1[0m
+Rendered images/_image (60.5ms)
+Completed in 101ms (View: 64, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1]
+
+
+Processing ImagesController#edit (for 89.251.59.94 at 2010-02-11 13:25:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.6ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/edit
+Completed in 73ms (View: 38, DB: 0) | 200 OK [http://furai.hd.free.fr/images/1/edit]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:18:00) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (47.2ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (48.1ms)
+Completed in 449ms (View: 125, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:21:56) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Completed in 63ms (View: 3, DB: 0) | 406 Not Acceptable [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:23:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+
+NameError (uninitialized constant Mime::PNG):
+  app/controllers/thumbnails_controller.rb:21:in `show'
+  app/controllers/thumbnails_controller.rb:18:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:25:36) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+
+ActionView::MissingTemplate (Missing template thumbnails/show.erb in view path app/views):
+  app/controllers/thumbnails_controller.rb:21:in `show'
+  app/controllers/thumbnails_controller.rb:18:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:26:19) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 122ms (View: 87, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:26:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 57ms (View: 3, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:26:39) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (1.0ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 65ms (View: 12, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:26:44) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.8ms)
+Completed in 37ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:33:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.7ms)
+Completed in 37ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:33:33) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+
+ActionView::TemplateError (undefined local variable or method `thumbnail' for #<ActionView::Base:0xb5d5ee94>) on line #1 of app/views/thumbnails/show.png.erb:
+1: <%= thumbnail.data %>
+
+    app/views/thumbnails/show.png.erb:1
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:33:44) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 36ms (View: 8, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:33:45) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 34ms (View: 3, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show to pgf (for 89.251.59.94 at 2010-02-11 15:33:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Completed in 31ms (View: 1, DB: 0) | 406 Not Acceptable [http://furai.hd.free.fr/thumbnails/4.pgf]
+
+
+Processing ThumbnailsController#show to pgf (for 89.251.59.94 at 2010-02-11 15:35:16) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 47ms (View: 10, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.pgf]
+
+
+Processing ThumbnailsController#show to pgf (for 89.251.59.94 at 2010-02-11 15:38:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.pgf]
+
+
+Processing ThumbnailsController#show to pgf (for 89.251.59.94 at 2010-02-11 15:39:25) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 66ms (View: 13, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.pgf]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:39:59) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.6ms)
+Completed in 214ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:40:04) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 45ms (View: 3, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 15:40:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering thumbnails/show
+Completed in 33ms (View: 3, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4.png]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:40:09) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mThumbnail Load (0.8ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 4) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.6ms)
+Completed in 37ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/4]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 15:40:12) [GET]
+  [4;35;1mThumbnail Load (104.0ms)[0m   [0mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;36;1mSQL (2175.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/index
+Completed in 2398ms (View: 88, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 15:40:17) [GET]
+  Parameters: {"page"=>"268"}
+  [4;35;1mThumbnail Load (520.2ms)[0m   [0mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 8010[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/index
+Completed in 862ms (View: 267, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails?page=268]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:40:21) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.8ms)
+Completed in 37ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to pgf (for 89.251.59.94 at 2010-02-11 15:40:24) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (18.2ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+Completed in 76ms (View: 16, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.pgf]
+
+
+Processing ThumbnailsController#show to pgf (for 89.251.59.94 at 2010-02-11 15:42:19) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (2.1ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+Completed in 61ms (View: 4, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.pgf]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 15:42:24) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (32.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (4.2ms)
+Completed in 73ms (View: 12, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to pgf (for 192.168.0.254 at 2010-02-11 15:46:42) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (24.1ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+Completed in 60ms (View: 8, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.pgf]
+
+
+Processing ThumbnailsController#show to pgf (for 192.168.0.254 at 2010-02-11 16:06:40) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+Completed in 34ms (View: 3, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.pgf]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:12:46) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.8ms)
+Completed in 59ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:20:11) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.5ms)
+Completed in 35ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:20:13) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #2 of app/views/thumbnails/show.png.erb:
+1: <% 
+2: 	t1 = Tempfile.open do |tempfile|
+3: 		tempfile.write(@thumbnail.data)
+4: 	end
+5: 	t2 = Tempfile.new
+
+    /usr/lib/ruby/1.8/tempfile.rb:168:in `initialize'
+    /usr/lib/ruby/1.8/tempfile.rb:168:in `new'
+    /usr/lib/ruby/1.8/tempfile.rb:168:in `open'
+    app/views/thumbnails/show.png.erb:2
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:22:02) [GET]
+  Parameters: {"id"=>"802"}
+  [4;36;1mThumbnail Load (82.2ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 802) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.8ms)
+Completed in 119ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/802]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:22:09) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+Rendered thumbnails/_thumbnail (2.7ms)
+Completed in 36ms (View: 6, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:23:12) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (6.4ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Rendered thumbnails/_thumbnail (36.6ms)
+Completed in 87ms (View: 45, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:23:31) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `uniquehash' for "#<UniqueHash:0xb5c919a8>":UniqueHash) on line #23 of app/views/thumbnails/_thumbnail.html.erb:
+20: 
+21: <p>
+22:   <b>Unique Hash:</b>
+23:   <%= thumbnail.unique_hash.uniquehash %>
+24: </p>
+
+    app/views/thumbnails/_thumbnail.html.erb:23
+    app/views/thumbnails/show.html.erb:1
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:23:47) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `unique_hash' for "#<UniqueHash:0xb5e4fd08>":UniqueHash) on line #23 of app/views/thumbnails/_thumbnail.html.erb:
+20: 
+21: <p>
+22:   <b>Unique Hash:</b>
+23:   <%= thumbnail.unique_hash.unique_hash %>
+24: </p>
+
+    app/views/thumbnails/_thumbnail.html.erb:23
+    app/views/thumbnails/show.html.erb:1
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mThumbnail Load (2.3ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (13.8ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (0.8ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (0.7ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 1) LIMIT 1[0m
+  [4;36;1mThumbnail Load (0.9ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (0.7ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 1) LIMIT 1[0m
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:24:39) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.6ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Rendered thumbnails/_thumbnail (12.4ms)
+Completed in 52ms (View: 21, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:25:03) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/thumbnails/show.png.erb:
+2: 	t1 = Tempfile.open(@thumbnail.unique_hash.uniqueHash) do |tempfile|
+3: 		tempfile.write(@thumbnail.data)
+4: 	end
+5: 	t2 = Tempfile.new
+6: 	`pgf -d #{t1.path} #{t2.path}.png`
+7: 	t1.unlink
+8: 	png_data = t2.read
+
+    app/views/thumbnails/show.png.erb:5:in `initialize'
+    app/views/thumbnails/show.png.erb:5:in `new'
+    app/views/thumbnails/show.png.erb:5
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (300.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:25:23) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #6 of app/views/thumbnails/show.png.erb:
+3: 		tempfile.write(@thumbnail.data)
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	`pgf -d #{t1.path} #{t2.path}.png`
+7: 	t1.unlink
+8: 	png_data = t2.read
+9: 	t2.unlink
+
+    app/views/thumbnails/show.png.erb:6
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:27:16) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Rendered thumbnails/_thumbnail (10.2ms)
+Completed in 42ms (View: 13, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 16:32:01) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Rendered thumbnails/_thumbnail (11.0ms)
+Completed in 46ms (View: 14, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:32:04) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	`pgf -d #{t1.path} #{t2.path}.png`
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:33:26) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.7ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.7ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #8 of app/views/thumbnails/show.png.erb:
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	print 
+8: 	system "pgf -d #{t1.path} #{t2.path}.png"
+9: 	t1.close!
+10: 	t3 = File.open(t2.path + ".png")
+11: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:8
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:33:35) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	system "pgf -d #{t1.path} #{t2.path}.png"
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:34:32) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:34:49) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:35:36) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:35:46) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (1.0ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.8ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (252.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:35:51) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #7 of app/views/thumbnails/show.png.erb:
+4: 	end
+5: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+6: 	t2.close
+7: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+8: 	t1.close!
+9: 	t3 = File.open(t2.path + ".png")
+10: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:7
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:38:04) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.5ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+
+ActionView::TemplateError (no such file to load -- Tempfile) on line #2 of app/views/thumbnails/show.png.erb:
+1: <% 
+2: 	require 'Tempfile'
+3: 	t1 = Tempfile.open(@thumbnail.unique_hash.uniqueHash) do |tempfile|
+4: 		tempfile.write(@thumbnail.data)
+5: 	end
+
+    app/views/thumbnails/show.png.erb:2
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.8ms)
+Rendered rescues/_request_and_response (49.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:40:40) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #8 of app/views/thumbnails/show.png.erb:
+5: 	end
+6: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+7: 	t2.close
+8: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+9: 	t1.close!
+10: 	t3 = File.open(t2.path + ".png")
+11: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:8
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:40:58) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #8 of app/views/thumbnails/show.png.erb:
+5: 	end
+6: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+7: 	t2.close
+8: 	t1.path
+9: 	t2.path
+10: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+11: 	t1.close!
+
+    app/views/thumbnails/show.png.erb:8
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:41:19) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.path) on line #9 of app/views/thumbnails/show.png.erb:
+6: 	t2 = Tempfile.new(@thumbnail.unique_hash.uniqueHash)
+7: 	t2.close
+8: 	t2.path
+9: 	result = %x[pgf -d #{t1.path} #{t2.path}.png]
+10: 	t1.close!
+11: 	t3 = File.open(t2.path + ".png")
+12: 	png_data = t3.read
+
+    app/views/thumbnails/show.png.erb:9
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:41:59) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `close!' for #<File:/tmp/e103f1d7f1e652e1e2867658549bd7ac.25386.5.png>) on line #13 of app/views/thumbnails/show.png.erb:
+10: 	t3 = File.open(t2.path + ".png")
+11: 	png_data = t3.read
+12: 	t2.unlink
+13: 	t3.close!
+14: 
+15: 
+16: %>
+
+    app/views/thumbnails/show.png.erb:13
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (100.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:42:27) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.unlink) on line #13 of app/views/thumbnails/show.png.erb:
+10: 	t3 = File.open(t2.path + ".png")
+11: 	png_data = t3.read
+12: 	t2.unlink
+13: 	t3.close.unlink
+14: 
+15: 
+16: %>
+
+    app/views/thumbnails/show.png.erb:13
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:42:42) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (1.0ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `unlink' for #<File:0xb5ceee28>) on line #14 of app/views/thumbnails/show.png.erb:
+11: 	png_data = t3.read
+12: 	t2.unlink
+13: 	t3.close
+14: 	t3.unlink
+15: 
+16: %>
+17: <%= png_data %>
+
+    app/views/thumbnails/show.png.erb:14
+    app/controllers/thumbnails_controller.rb:21:in `show'
+    app/controllers/thumbnails_controller.rb:18:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:43:40) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 162ms (View: 113, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:43:41) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.7ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 197ms (View: 167, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:44:06) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (1.1ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 217ms (View: 160, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:44:07) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;35;1mThumbnail Load (0.6ms)[0m   [0mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;36;1mUniqueHash Load (0.5ms)[0m   [0;1mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 158ms (View: 128, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 16:44:33) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.7ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 149ms (View: 117, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 16:46:09) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.7ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 150ms (View: 121, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 16:46:41) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 147ms (View: 118, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 16:47:15) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 212ms (View: 183, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 16:48:10) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 203ms (View: 174, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:48:21) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 141ms (View: 112, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:48:25) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (1.1ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 226ms (View: 171, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:48:26) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 198ms (View: 166, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:48:51) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.7ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 150ms (View: 120, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 16:48:52) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 194ms (View: 165, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 16:49:56) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 138ms (View: 109, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+  [4;36;1mThumbnail Load (1.1ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 1[0m
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 1) LIMIT 1[0m
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:05:33) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.7ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 140ms (View: 108, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:05:34) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.7ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 213ms (View: 163, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:05:59) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 185ms (View: 154, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:05:59) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 203ms (View: 154, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:06:47) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 198ms (View: 96, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:06:48) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 134ms (View: 94, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 192.168.0.254 at 2010-02-11 17:06:57) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 137ms (View: 94, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:07:33) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 189ms (View: 160, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:08:45) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 134ms (View: 105, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:09:10) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (1.1ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 238ms (View: 183, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 17:10:37) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Rendered thumbnails/_thumbnail (186.0ms)
+Completed in 260ms (View: 231, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:10:42) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 263ms (View: 233, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#show (for 89.251.59.94 at 2010-02-11 17:13:42) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Rendered thumbnails/_thumbnail (12.7ms)
+Completed in 50ms (View: 21, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022]
+
+
+Processing ThumbnailsController#show to png (for 89.251.59.94 at 2010-02-11 17:13:42) [GET]
+  Parameters: {"id"=>"8022"}
+  [4;36;1mThumbnail Load (0.6ms)[0m   [0;1mSELECT * FROM "thumbnails" WHERE ("thumbnails"."id" = 8022) [0m
+Rendering thumbnails/show
+  [4;35;1mUniqueHash Load (0.5ms)[0m   [0mSELECT * FROM "uniquehashes" WHERE ("uniquehashes".thumbid = 8022) LIMIT 1[0m
+Completed in 207ms (View: 154, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails/8022.png]
+
+
+Processing ThumbnailsController#index (for 89.251.59.94 at 2010-02-11 17:14:03) [GET]
+  [4;36;1mThumbnail Load (7.0ms)[0m   [0;1mSELECT * FROM "thumbnails" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (23.6ms)[0m   [0mSELECT count(*) AS count_all FROM "thumbnails" [0m
+Rendering template within layouts/thumbnails
+Rendering thumbnails/index
+Completed in 202ms (View: 53, DB: 0) | 200 OK [http://furai.hd.free.fr/thumbnails]
