@@ -25,7 +25,7 @@
 
 <h2>Albums</h2>
 <table>
-<% @album_root.albums.each do |album| %>
+<% @albums.each do |album| %>
   <tr>
     <td><%= h album.id %></td>
     <td><%= h album.relativePath %></td>
@@ -33,4 +33,5 @@
   </tr>
 <% end %>
 </table>
+<%= will_paginate @albums %>
 <%= link_to 'Back', album_roots_path %>
