@@ -1,18 +1,3 @@
-<p>
-  <b>Modificationdate:</b>
-  <%=h @image_haar_matrix.modificationDate %>
-</p>
+<%= render :partial  => @image_haar_matrix %>
 
-<p>
-  <b>Uniquehash:</b>
-  <%=h @image_haar_matrix.uniqueHash %>
-</p>
-
-<p>
-  <b>Matrix:</b>
-  <%=h @image_haar_matrix.matrix %>
-</p>
-
-
-<%= link_to 'Edit', edit_image_haar_matrix_path(@image_haar_matrix) %> |
 <%= link_to 'Back', image_haar_matrices_path %>
