@@ -1,30 +1,17 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :file_paths
-
   map.resources :thumbnails
-
   map.resources :unique_hashes
-
   map.resources :tags
-
   map.resources :image_copyrights
-
   map.resources :image_haar_matrices
-
   map.resources :image_properties
-
   map.resources :image_metadatas
-
   map.resources :image_informations
-
   map.resources :image_comments
-
   map.resources :image_positions
-
   map.resources :images
-
   map.resources :albums
-
   map.resources :album_roots
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -59,7 +46,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "album_roots"
 
   # See how all your routes lay out with "rake routes"
 
