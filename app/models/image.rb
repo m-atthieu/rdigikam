@@ -9,4 +9,5 @@ class Image < DigikamDb
 	has_one :image_haar_matrix, :foreign_key => "imageid"
 	has_one :image_copyright, :foreign_key => "imageid"
 	has_one :unique_hash, :foreign_key => "uniquehash"
+	acts_as_taggable
 end
