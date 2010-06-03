@@ -16,6 +16,7 @@ Rails::Initializer.run do |config|
 
   # Specify gems that this application depends on and have them installed with rake gems:install
   config.gem "acts_as_tree"
+  config.gem "acts_as_taggable"
   config.gem "will_paginate"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
