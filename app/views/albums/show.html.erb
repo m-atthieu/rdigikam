@@ -29,7 +29,7 @@
 <table>
 <% @album.images.each do |image| %>
   <tr>
-    <td><%= link_to 'image', :controller => "images", :action => 'show', :id => image %></td>
+	  <td><%= link_to image.name, :controller => "images", :action => 'show', :id => image %></td>
   </tr>
 <% end %>
 </table>
