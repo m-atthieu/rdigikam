@@ -1,4 +1,6 @@
 class AlbumRootsController < ApplicationController
+	layout "application"
+
   # GET /album_roots
   # GET /album_roots.xml
   def index
