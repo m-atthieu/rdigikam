@@ -18,8 +18,8 @@ class ThumbnailsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @thumbnail }
-      format.png  { render :png => @thumbnail }
-      format.pgf  { render :pgf => @thumbnail }
+      format.png  { render :png => @thumbnail, :mime_type => Mime::Type.lookup("image/png") }
+      format.jpg  { render :jpg => @thumbnail, :mime_type => Mime::Type.lookup("image/jpg") }
     end
   end
 
