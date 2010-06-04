@@ -1,24 +1,11 @@
-<h1>Listing album_roots</h1>
+<h1>Album Roots</h1>
 
-<table>
-  <tr>
-    <th>Label</th>
-    <th>Status</th>
-    <th>Type</th>
-    <th>Identifier</th>
-    <th>Specificpath</th>
-  </tr>
-
+<div class="album_roots">
 <% @album_roots.each do |album_root| %>
-  <tr>
-    <td><%=h album_root.label %></td>
-    <td><%=h album_root.status %></td>
-    <td><%=h album_root.type %></td>
-    <td><%=h album_root.identifier %></td>
-    <td><%=h album_root.specificPath %></td>
-    <td><%= link_to 'Show', album_root %></td>
-  </tr>
+	<div class="album_root">
+		<span><%=h album_root.label %></span>
+		<span>(<%=h album_root.specificPath %>)</span>
+		<span><%= link_to 'Show', album_root %></span>
+	</div>
 <% end %>
-</table>
-
-<br />
+</div>
