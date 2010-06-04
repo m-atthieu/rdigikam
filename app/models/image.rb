@@ -8,5 +8,6 @@ class Image < DigikamDb
 	has_one :image_position, :foreign_key => "imageid"
 	has_one :image_haar_matrix, :foreign_key => "imageid"
 	has_one :image_copyright, :foreign_key => "imageid"
-	has_one :unique_hash, :foreign_key => "uniquehash"
+  has_one :unique_hash, :primary_key => 'uniqueHash', :foreign_key => "uniquehash"
+  #has_one :thumbnail, :through => :unique_hash
 end

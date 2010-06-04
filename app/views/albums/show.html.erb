@@ -1,35 +1,17 @@
-<p>
-  <b>Relativepath:</b>
-  <%=h @album.relativePath %>
-</p>
+<h1>
+  <%=h @album.album_root.specificPath + @album.relativePath %>
+</h1>
 
-<p>
-  <b>Date:</b>
-  <%=h @album.date %>
-</p>
-
-<p>
-  <b>Caption:</b>
+<h2>
   <%=h @album.caption %>
-</p>
-
-<p>
-  <b>Collection:</b>
-  <%=h @album.collection %>
-</p>
-
-<p>
-  <b>Icon:</b>
-  <%=h @album.icon %>
-</p>
-
-<%= link_to 'Back', albums_path %>
+</h2>
 
 <h2>Images</h2>
-<table>
+<div class="images">
 <% @album.images.each do |image| %>
-  <tr>
-    <td><%= link_to 'image', :controller => "images", :action => 'show', :id => image %></td>
-  </tr>
+  <div class="image">
+	  <img src="<%= url_for :controller => 'thumbnails', :action => "show", :format => 'jpg', :id => image.unique_hash.thumbnail %>" />
+	  <%= link_to image.name, :controller => "images", :action => 'show', :id => image %></span>
+  </div>
 <% end %>
-</table>
+</div>

@@ -16,7 +16,7 @@ class AlbumRootsController < ApplicationController
   # GET /album_roots/1.xml
   def show
     @album_root = AlbumRoot.find(params[:id])
-    @albums = @album_root.albums.paginate :page => params[:page]
+    @albums = Album.paginate :page => params[:page], :conditions => ["albumRoot = ?", params[:id]], :having => "count(images.id) > 0", :joins => :images, :group => "albums.id"
     
     respond_to do |format|
       format.html # show.html.erb

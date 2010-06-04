@@ -1,37 +1,15 @@
-<p>
-  <b>Label:</b>
-  <%=h @album_root.label %>
-</p>
+<h1>
+	Albums in <%=h @album_root.label %>
+</h1>
 
-<p>
-  <b>Status:</b>
-  <%=h @album_root.status %>
-</p>
-
-<p>
-  <b>Type:</b>
-  <%=h @album_root.type %>
-</p>
-
-<p>
-  <b>Identifier:</b>
-  <%=h @album_root.identifier %>
-</p>
-
-<p>
-  <b>Specificpath:</b>
-  <%=h @album_root.specificPath %>
-</p>
-
-<h2>Albums</h2>
-<table>
+<div class="albums">
 <% @albums.each do |album| %>
-  <tr>
-    <td><%= h album.id %></td>
-    <td><%= h album.relativePath %></td>
-    <td><%= link_to 'show', :controller => "albums", :action => 'show', :id => album %></td>
-  </tr>
-<% end %>
-</table>
+	<% if not album.images.count == 0 then %>
+  		<div class="album">
+    			<span><%= link_to album.relativePath, :controller => "albums", :action => 'show', :id => album %></span>
+		</div>
+		<% end %>
+	<% end %>
+</div>
 <%= will_paginate @albums %>
-<%= link_to 'Back', album_roots_path %>
+<%= link_to 'Back to album roots', album_roots_path %>

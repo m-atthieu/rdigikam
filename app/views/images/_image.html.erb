@@ -1,27 +1,6 @@
-<p>
-  <b>Album Root</b>
-  <%=h @image.album.album_root.specificPath %>
-</p>
-
-<p>
-  <b>Album</b>
-  <%=h @image.album.relativePath %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%=h @image.name %>
-</p>
-
-<p>
-  <b>Status:</b>
-  <%=h @image.status %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%=h @image.category %>
-</p>
+<h1>
+  <%=h @image.album.album_root.specificPath + @image.album.relativePath + '/' + @image.name %>
+</h1>
 
 <p>
   <b>Modification Date:</b>
@@ -38,23 +17,26 @@
   <%=h @image.uniqueHash %>
 </p>
 
-<h2>Image Metadata</h2>
+<h2>Metadata</h2>
 <%= render :partial => @image.image_metadata %>
 
-<h2>Image Information</h2>
+<h2>Information</h2>
 <%= render :partial => @image.image_information %>
 
-<h2>Image Comment</h2>
+<h2>Comment</h2>
 <%= render :partial => @image.image_comment %>
 
-<h2>Image Property</h2>
+<h2>Property</h2>
 <%= render :partial => @image.image_property %>
 
-<h2>Image Position</h2>
+<h2>Position</h2>
 <%= render :partial => @image.image_position %>
 
-<h2>Image Haar Matrix</h2>
+<h2>Haar Matrix</h2>
 <%= render :partial => @image.image_haar_matrix %>
 
-<h2>Image Copyright</h2>
+<h2>Copyright</h2>
 <%= render :partial => @image.image_copyright %>
+
+<h2>Thumbnail</h2>
+<%= render :partial => @image.unique_hash.thumbnail %>

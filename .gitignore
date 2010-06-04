@@ -1,5 +1,6 @@
-log/*.log
+log/[^.]*
 tmp/**/*
 db/*.db
 doc/api
 doc/app
+lib/PGF.so

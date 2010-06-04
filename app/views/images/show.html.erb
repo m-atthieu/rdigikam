@@ -1,3 +1,4 @@
 <%= render :partial => @image %>
 
-<%= link_to 'Back', images_path %>
+<br/>
+<%= link_to 'Back', :controller => 'albums', :action => 'show', :id => @image.album.id %>
