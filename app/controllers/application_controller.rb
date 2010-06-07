@@ -5,11 +5,15 @@ require "will_paginate"
 
 Mime::Type.register "image/png", :png
 Mime::Type.register "image/jpg", :jpg
+Mime::Type.register "text/x-json", :json
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  # See ActionController::RequestForgeryProtection for details
+  protect_from_forgery :only => [:create, :update, :destroy] 
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  def index
+  end
 end

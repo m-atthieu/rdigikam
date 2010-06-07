@@ -1,4 +1,5 @@
 class AlbumRootsController < ApplicationController
+	#layout 'application'
   # GET /album_roots
   # GET /album_roots.xml
   def index
@@ -7,6 +8,7 @@ class AlbumRootsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @album_roots }
+      format.json { render :json => @album_roots }
     end
   end
 
@@ -21,7 +23,6 @@ class AlbumRootsController < ApplicationController
       format.xml  { render :xml => @album_root }
     end
   end
-
   # GET /album_roots/new
   # GET /album_roots/new.xml
   #def new
