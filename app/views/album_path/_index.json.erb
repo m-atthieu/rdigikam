@@ -1,0 +1,2 @@
+<% @album_roots.collect! do |a| "{ 'id': '#{a.id}/#{node}', 'text': '#{a.label}', 'leaf': false, 'cls': 'folder' }" end %>
+[<%= @album_roots.join(',')%>]
