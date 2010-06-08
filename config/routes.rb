@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :images
   map.resources :albums
   map.resources :album_roots
+  map.resources :album_path
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "application"
