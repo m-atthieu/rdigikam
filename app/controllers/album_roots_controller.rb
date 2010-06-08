@@ -8,7 +8,6 @@ class AlbumRootsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @album_roots }
-      format.json { render :json => @album_roots }
     end
   end
 
