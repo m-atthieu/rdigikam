@@ -1,0 +1,2 @@
+<% album_paths = @album_path.childrens.collect do |a| "{ 'id': '"+a['id']+"', 'text': '" + a["text"] + "', 'leaf': false, 'cls': 'folder' }" end %>
+[<%= album_paths.join(',')%>]
