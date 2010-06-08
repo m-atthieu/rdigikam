@@ -2,6 +2,7 @@ var albums_panel = {
   title: 'albums', 
   iconCls: 'silk-camera',
   xtype: 'treepanel',
+  autoScroll: true,
   loader: new Ext.tree.TreeLoader({ 
     dataUrl: '/album_path.json',
     requestMethod: 'GET'
@@ -10,8 +11,15 @@ var albums_panel = {
     nodeType: 'async',
     text: 'albums',
     draggable: false,
-    id: '/'
-  }
+    id: 'root'
+  },
+	listeners: {
+		render: function(treepanel){
+			treepanel.getSelectionModel().on('selectionchange', function(tree, node){ 
+				images_view_store.load({params: { node: node.id} });
+			});
+		}
+	}
 };
 var dates_panel = { title: 'dates', xtype: 'panel', iconCls: 'silk-calendar' };
 var tags_panel = { title: 'tags', xtype: 'panel', iconCls: 'silk-tag' };
@@ -63,7 +71,32 @@ var east_region = {
   items: [ properties_panel, metadata_panel, color_panel, comments_tags_panel, geolocation_panel, tag_filters_panel ]
 };
 
-var center_region = { region: 'center', xtype: 'panel' }
+var images_view_store = new Ext.data.JsonStore({
+	url: '/album_images.json',
+	baseParams: { node: 'root' },
+	requestMethod: 'GET',
+	root: 'images',
+	id: 'name',
+	fields: [
+		'name',
+		'url',
+		{name: 'shortName', mapping: 'name', convert: function(n){ return (n.length < 15? n: n.substr(0, 12) + '...'); } }
+	]
+});
+
+var images_view = new Ext.DataView({
+	itemSelector: 'div.thumb-wrap',
+	style: 'overflow: auto;',
+	store: images_view_store,
+	tpl: new Ext.XTemplate('<tpl for="."><div class="thumb-wrap" id="{name}"><div class="thumb"><img src="/thumbnails/{thumbId}.jpg"/></div><span>{shortName}</span></div></tpl>')
+});
+
+var center_region = { 
+	region: 'center', 
+	xtype: 'panel',
+	layout: 'fit',
+	items: images_view
+};
 
 var layout = {
   layout: 'border',
