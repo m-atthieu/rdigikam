@@ -3,9 +3,12 @@
 
 require "will_paginate"
 
+#Mime.send(:remove_const, :PNG)
 Mime::Type.register "image/png", :png
+#Mime.send(:remove_const, :JPG)
 Mime::Type.register "image/jpg", :jpg
-Mime::Type.register "text/x-json", :json
+#Mime.send(:remove_const, :JSON)
+#Mime::Type.register "text/javascript", :json
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
