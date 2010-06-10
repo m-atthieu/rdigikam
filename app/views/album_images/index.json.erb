@@ -1,0 +1,9 @@
+<% album_images = @album_images.images.collect do |i| 
+	if not i.unique_hash.nil? then
+		"{id: #{i.id}, name: '#{i.name}', fileSize: #{i.fileSize}, thumbId: '#{i.unique_hash.thumbId}'}" 
+	else
+		"{id: #{i.id}, name: '#{i.name}', fileSize: #{i.fileSize}, thumbId: ''}"
+	end
+end %>{
+	images: [<%= album_images.join(",\n\t\t") %>]
+}
