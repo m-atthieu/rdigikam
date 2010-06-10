@@ -20,7 +20,9 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "application"
 
   # See how all your routes lay out with "rake routes"
-
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  map.connect 'ext/:controller/:id', :action => 'show', :format => 'json'
+  map.connect 'ext/:controller', :action => 'show', :format => 'json'
+
 end
