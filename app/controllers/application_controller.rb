@@ -2,6 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 require "will_paginate"
+require 'PGF'
 
 #Mime.send(:remove_const, :PNG)
 Mime::Type.register "image/png", :png
