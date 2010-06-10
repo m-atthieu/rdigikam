@@ -1,0 +1,34 @@
+#images {
+    background: #fff repeat-x top left;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+
+#images .thumb {
+    background: #dddddd;
+    padding: 3px;
+    height: 128px;
+    width: 96px;
+}
+
+#images .thumb img {
+    border: 1px solid white;
+    max-height: 96px;
+    max-width: 96px;
+}
+
+#images .thumb-wrap {
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 5px;
+}
+
+#images .thumb-wrap span {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+#images .x-view-selected .thumb {
+    background: #8db2e3;
+}
