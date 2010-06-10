@@ -17,11 +17,10 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on and have them installed with rake gems:install
   config.gem "acts_as_tree"
   config.gem "will_paginate"
-  config.gem "extjs-mvc"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
-  config.plugins = [ :active_delegate ]
+  config.plugins = [ :active_delegate, :ext_scaffold ]
 
   # Skip frameworks you're not going to use. To use Rails without a database,
   # you must remove the Active Record framework.
