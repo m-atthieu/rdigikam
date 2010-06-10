@@ -4,10 +4,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>rdk: <%= controller.controller_name + '/' + controller.action_name %></title>
-  <%= stylesheet_link_tag '/javascripts/extjs/resources/css/ext-all', 'silk2' %>
+  <title>rdk</title>
+  <%= stylesheet_link_tag '/javascripts/extjs/resources/css/ext-all', 'rdk', 'silk2' %>
   <%= stylesheet_link_tag '/javascripts/extjs/resources/css/xtheme-gray' %>
   <%= javascript_include_tag 'extjs/adapter/ext/ext-base', 'extjs/ext-all-debug' %>
+  <%= javascript_include_tag 'number.js' %>
   <%= javascript_include_tag 'views/' + controller.controller_name + '/' + controller.action_name %>
 </head>
 <body>
