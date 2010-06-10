@@ -1,3 +1,9 @@
-<% #require 'PGF'
-   image = PGF.to_ @thumbnail.data, "JPG"
+<%
+	key = 'thumbs-' + @thumbnail.id.to_s
+	if Rails.cache.exist?(key) then
+		image = Rails.cache.read key, :raw => true
+	else
+		image = PGF.to_ @thumbnail.data, "JPG"
+		Rails.cache.write key, image, :raw => true
+	end
 %><%= image %>
