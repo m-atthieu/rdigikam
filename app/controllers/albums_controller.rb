@@ -6,6 +6,7 @@ class AlbumsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render :json => @albums.to_ext_json }
       format.xml  { render :xml => @albums }
     end
   end
