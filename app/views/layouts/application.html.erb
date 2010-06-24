@@ -16,7 +16,7 @@
         xtype: 'treepanel',
         autoScroll: true,
         loader: new Ext.tree.TreeLoader({ 
-            dataUrl: '/album_path.json',
+            dataUrl: '<%= url_for "album_path.json" %>',
             requestMethod: 'GET'
         }),
         root: {
@@ -51,7 +51,7 @@
     };
     
     var properties_panel_store = new Ext.data.JsonStore({
-        url: '/image_properties.json',
+        url: '<%= url_for "image_properties.json" %>',
         restful: true
     });
     
