@@ -17,6 +17,7 @@ class ImageInformationsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
+      format.json { render :json => @image_information }
       format.xml  { render :xml => @image_information }
     end
   end

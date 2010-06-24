@@ -51,19 +51,41 @@
     };
     
     var properties_panel_store = new Ext.data.JsonStore({
-        url: '<%= url_for "image_properties.json" %>',
-        restful: true
+        url: '<%= url_for "ext/image_informations" %>',
+        restful: true,
+        requestMethod: 'GET',
+        storeId: 'image-properties-store',
+        idProperty: 'imageid',
+        listeners: {
+            load: function(store, records, options){
+                Ext.getCmp('properties-panel-grid').setSource(store.getAt(0).data);
+            }
+        },
+        fields: [
+            'rating', // TODO: star rendering for this field
+            { name: 'creation date', mapping: 'creationDate' },
+            { name: '', mapping: 'digitizationDate' },
+            'orientation',
+            'width',
+            'height',
+            'format',
+            { name: 'color depth', mapping: 'colorDepth' },
+            { name: 'color model', mapping: 'colorModel' }
+        ]
     });
     
     var properties_panel = { 
 	title: 'properties', 
 	xtype: 'propertygrid', 
-	iconCls: 'silk-information'
-        
+	iconCls: 'silk-information',
+        id: 'properties-panel-grid',
+        store: properties_panel_store,
+        source: {},
+        startEditing: Ext.emptyFn
     };
     
     var metadata_panel_exif_store = new Ext.data.JsonStore({
-        url:'/ext/image_metadatas',
+        url: '<%= url_for "/ext/image_metadatas" %>',
         restful: true,
         requestMethod: 'GET',
         storeId: 'image-metadata-store',
@@ -173,8 +195,10 @@
     	    selectionchange: function(view, nodes){
 	        if(nodes[0]){
                     metadata_panel_exif_store.load({ params: { id: nodes[0].id } });
+                    properties_panel_store.load({ params: { id: nodes[0].id } });
 	        } else {
 		    metadata_panel_exif_store.removeAll();
+                    properties_panel_store.removeAll();
 	        }
 	    }
         }
