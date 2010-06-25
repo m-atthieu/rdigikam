@@ -8,7 +8,8 @@
   <%= stylesheet_link_tag '/javascripts/extjs/resources/css/ext-all', 'rdk', 'silk2' %>
   <%= stylesheet_link_tag '/javascripts/extjs/resources/css/xtheme-gray' %>
   <%= javascript_include_tag 'extjs/adapter/ext/ext-base', 'extjs/ext-all-debug' %>
-  <%= javascript_include_tag 'number.js' %>
+  <%= javascript_include_tag 'number.js', 'ux.gmaps.js' %>
+  <%= javascript_include_tag 'http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAFgQj6PXCkNqHHGrK6kC6KBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxS6DG867OioMmDZtzyoLre6UrB6Vw' %>
   <script type="text/javascript">
     var albums_panel = { 
         title: 'albums', 
@@ -144,8 +145,28 @@
     };
     
     var color_panel = { title: 'color', xtype: 'panel', iconCls: 'silk-color-wheel' };
-    var comments_tags_panel = { title: 'comment/tags', xtype: 'panel', iconCls: 'silk-comments' };
-    var geolocation_panel = { title: 'geolocation', xtype: 'panel', iconCls: 'silk-world' };
+    var comments_tags_panel = { 
+        title: 'comment / tags', 
+        xtype: 'panel', 
+        iconCls: 'silk-comments',
+        layout: 'vbox',
+        layoutConfig: {
+            align: 'stretch',
+            pack: 'start'
+        },
+        items: [
+            { xtype: 'panel', html: 'p1', height: 32 },
+            { xtype: 'panel', html: 'p2', flex: 2 }
+        ]
+    };
+    var geolocation_panel = { 
+        title: 'geolocation', 
+        xtype: 'gmappanel', 
+        iconCls: 'silk-world',
+        setCenter: { lat: 0, 'long': 0 },
+        addControl: new GSmallMapControl(),
+        zoomLevel: 3
+    };
     var tag_filters_panel = { title: 'tag filters', xtype: 'panel', iconCls: 'silk-tag-blue' };
     
     var east_region = {
