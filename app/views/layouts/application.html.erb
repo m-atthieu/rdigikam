@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -86,7 +85,7 @@
     };
     
     var metadata_panel_exif_store = new Ext.data.JsonStore({
-        url: '<%= url_for "/ext/image_metadatas" %>',
+        url: '<%= url_for "ext/image_metadatas" %>',
         restful: true,
         requestMethod: 'GET',
         storeId: 'image-metadata-store',
@@ -180,7 +179,7 @@
     };
     
     var images_view_store = new Ext.data.JsonStore({
-	url: '/album_images.json',
+	url: '<%= url_for "album_images.json" %>',
 	baseParams: { node: 'root' },
 	requestMethod: 'GET',
 	restful: true,
@@ -206,7 +205,7 @@
         tpl: new Ext.XTemplate('<tpl for=".">',
                                '<div class="thumb-wrap" id="{id}">',
                                '<div class="thumb">',
-                               '<img src="/thumbnails/{thumbId}.jpg"/>',
+			       '<img src="<%= url_for 'thumbnails/' %>{thumbId}.jpg"/>',
                                '</div>',
                                '<span>{shortName}</span>',
                                '<span> ({size} ko)</span>',
